@@ -7,12 +7,15 @@ pub use base::*;
 
 #[cfg(feature = "wide")]
 mod wide;
+#[cfg(feature = "wide")]
 pub use wide::*;
 
 #[cfg(feature = "mouse")]
 mod mouse;
+#[cfg(feature = "mouse")]
 pub use mouse::*;
 
 #[cfg(feature = "extensions")]
 mod extensions;
+#[cfg(feature = "extensions")]
 pub use extensions::*;
