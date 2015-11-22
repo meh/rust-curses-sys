@@ -35,6 +35,15 @@ pub const A_TOP:        chtype = BITS!(1, 21);
 pub const A_VERTICAL:   chtype = BITS!(1, 22);
 pub const A_ITALIC:     chtype = BITS!(1, 23);
 
+pub const COLOR_BLACK:   c_short = 0;
+pub const COLOR_RED:     c_short = 1;
+pub const COLOR_GREEN:   c_short = 2;
+pub const COLOR_YELLOW:  c_short = 3;
+pub const COLOR_BLUE:    c_short = 4;
+pub const COLOR_MAGENTA: c_short = 5;
+pub const COLOR_CYAN:    c_short = 6;
+pub const COLOR_WHITE:   c_short = 7;
+
 pub const KEY_CODE_YES:  c_int = 0o400;
 pub const KEY_MIN:       c_int = 0o401;
 pub const KEY_BREAK:     c_int = 0o401;
