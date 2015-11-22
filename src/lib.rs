@@ -19,3 +19,8 @@ pub use mouse::*;
 mod extensions;
 #[cfg(feature = "extensions")]
 pub use extensions::*;
+
+#[cfg(feature = "form")]
+mod form;
+#[cfg(feature = "form")]
+pub use form::*;
