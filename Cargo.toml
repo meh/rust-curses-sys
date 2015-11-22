@@ -1,0 +1,20 @@
+[package]
+name    = "curses-sys"
+version = "6.0.0-1"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "WTFPL"
+
+description = "FFI bindings for curses"
+repository  = "https://github.com/meh/rust-curses-sys"
+keywords    = ["curses", "terminal", "ansi"]
+
+[dependencies]
+libc = "0.2"
+
+[features]
+default = ["wide", "mouse", "extensions"]
+
+wide       = []
+mouse      = []
+extensions = []
