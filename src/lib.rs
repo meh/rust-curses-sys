@@ -20,6 +20,11 @@ mod extensions;
 #[cfg(feature = "extensions")]
 pub use extensions::*;
 
+#[cfg(feature = "panel")]
+mod panel;
+#[cfg(feature = "panel")]
+pub use panel::*;
+
 #[cfg(feature = "form")]
 mod form;
 #[cfg(feature = "form")]
