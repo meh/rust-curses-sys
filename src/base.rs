@@ -276,6 +276,15 @@ extern "C" {
 	pub fn mvwaddchstr(win: *mut WINDOW, y: c_int, x: c_int, chstr: *const chtype) -> c_int;
 	pub fn mvwaddchnstr(win: *mut WINDOW, y: c_int, x: c_int, chstr: *const chtype, n: c_int) -> c_int;
 
+	pub fn addstr(string: *const c_char) -> c_int;
+	pub fn addnstr(string: *const c_char, n: c_int) -> c_int;
+	pub fn waddstr(win: *mut WINDOW, string: *const c_char) -> c_int;
+	pub fn waddnstr(win: *mut WINDOW, string: *const c_char, n: c_int) -> c_int;
+	pub fn mvaddstr(y: c_int, x: c_int, string: *const c_char) -> c_int;
+	pub fn mvaddnstr(y: c_int, x: c_int, string: *const c_char, n: c_int) -> c_int;
+	pub fn mvwaddstr(win: *mut WINDOW, y: c_int, x: c_int, string: *const c_char) -> c_int;
+	pub fn mvwaddnstr(win: *mut WINDOW, y: c_int, x: c_int, string: *const c_char, n: c_int) -> c_int;
+
 	pub fn attroff(attrs: c_int) -> c_int;
 	pub fn wattroff(win: *mut WINDOW, attrs: c_int) -> c_int;
 	pub fn attron(attrs: c_int) -> c_int;
