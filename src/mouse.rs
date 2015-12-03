@@ -53,7 +53,7 @@ pub const BUTTON_ALT:   mmask_t = MASK!(6, 0o04);
 pub const REPORT_MOUSE_POSITION: mmask_t = MASK!(6, 0o10);
 pub const ALL_MOUSE_EVENTS:      mmask_t = REPORT_MOUSE_POSITION - 1;
 
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Eq, PartialEq, Debug)]
 #[repr(C)]
 pub struct MEVENT {
 	pub id:     c_short,
