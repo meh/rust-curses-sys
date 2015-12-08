@@ -424,7 +424,7 @@ extern "C" {
 
 	pub fn overlay(srcwin: *const WINDOW, dstwin: *mut WINDOW) -> c_int;
 	pub fn overwrite(srcwin: *const WINDOW, dstwin: *mut WINDOW) -> c_int;
-	pub fn copywin(srcwin: *const WINDOW, dstwin: *mut WINDOW, sminrow: c_int, smincol: c_int, dminrow: c_int, dmincol: c_int, dmaxrow: c_int, dmaxcol: c_int, overlay: c_int);
+	pub fn copywin(srcwin: *const WINDOW, dstwin: *mut WINDOW, sminrow: c_int, smincol: c_int, dminrow: c_int, dmincol: c_int, dmaxrow: c_int, dmaxcol: c_int, overlay: c_int) -> c_int;
 
 	pub fn refresh() -> c_int;
 	pub fn wrefresh(win: *mut WINDOW) -> c_int;
